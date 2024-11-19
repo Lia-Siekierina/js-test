@@ -2,127 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
+    <title>Portfolio 2.0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/accordion-js@3.3.1/dist/accordion.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/js-test/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-test/assets/vendor-CTqzIL4Y.js">
+    <link rel="stylesheet" crossorigin href="/js-test/assets/vendor-CzG10Eoq.css">
+    <link rel="stylesheet" crossorigin href="/js-test/assets/index-DE2N7daq.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
+        <section class="faq" id="faq">
+            <div class="container">
+              <h2 class="faq-title">Frequently Asked Questions</h2>
+              <ul class="faq-list">
+                <li class="faq-item">
+                  <button class="faq-question" aria-expanded="true">
+                    What programming languages ​​are most often used in your project?                  </button>
+                  <div class="faq-answer">
+                    <p>In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages. </p>                 </div>
+                </li>
+                <li class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    What are the deadlines for the project?                  </button>
+                  <div class="faq-answer">
+                    <p>The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                  </div>
+                </li>
+                <li class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    What payment methods do you accept?                  </button>
+                  <div class="faq-answer">
+                    <p>Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+                  </div>
+                </li>
+                <li class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    How can I contact you?                  </button>
+                  <div class="faq-answer">
+                    <p>In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                  </div>
+                </li>
+                <li class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    Do you provide advice or support?                </button>
+                  <div class="faq-answer">
+                    <p>The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                  </div>
+                </li>
+                <li class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    What does the process of developing a software product look like from idea to implementation?                </button>
+                  <div class="faq-answer">
+                    <p>Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          
     </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/accordion-js@3.3.1/dist/accordion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
