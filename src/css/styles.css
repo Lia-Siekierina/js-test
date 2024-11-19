@@ -1,89 +1,42 @@
-.faq {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-}
 
-.faq__title {
-  font-size: 24px;
+
+/* ------- */
+
+.faq {
+  margin: 20px auto;
+  max-width: 800px;
+}
+.faq-title {
   text-align: center;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
-
-.faq__list {
+.faq-list {
   list-style: none;
-  margin: 0;
   padding: 0;
-  max-width: 800px;
-  margin: 0 auto;
 }
-
-.faq__item {
+.faq-item {
   margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
 }
-
-.faq__trigger {
-  background: #fff;
+.faq-question {
+  background: #f0f0f0;
   border: none;
   width: 100%;
-  text-align: left;
-  padding: 15px;
-  font-size: 18px;
+  padding: 10px 15px;
+  font-size: 1rem;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: left;
+  transition: background 0.3s;
 }
-
-.faq__trigger:hover {
-  background: #f0f0f0;
+.faq-question:hover {
+  background: #e0e0e0;
 }
-
-.faq__content {
-  display: none;
-  padding: 15px;
-  background: #fff;
-  font-size: 16px;
-  color: #333;
+.faq-answer {
+  display: none;  /* Відповіді приховані за замовчуванням */
+  padding: 10px 15px;
+  background: #fafafa;
+  border-left: 4px solid #00aaff;
 }
-
-.faq__content.active {
-  display: block;
-}
-
-/* Breakpoints */
-@media (min-width: 360px) {
-  .faq__title {
-    font-size: 28px;
-  }
-}
-
-@media (min-width: 768px) {
-  .faq {
-    padding: 80px 40px;
-  }
-
-  .faq__title {
-    font-size: 32px;
-  }
-
-  .faq__trigger {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .faq {
-    padding: 100px 60px;
-  }
-
-  .faq__title {
-    font-size: 36px;
-  }
-
-  .faq__trigger {
-    font-size: 22px;
-  }
+.faq-answer.show {
+  display: block;  /* Показуємо відповідь при додаванні класу 'show' */
 }
