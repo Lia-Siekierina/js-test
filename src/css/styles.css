@@ -184,12 +184,14 @@ margin-bottom: 40px;
   flex-direction: row;
   gap: 16px;
 
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   border-bottom: 1px solid #ddd;
   overflow: hidden;
   transition: all 0.3s ease;
   
 }
+
+
 
 .faq-question {
 
@@ -222,6 +224,10 @@ transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 16px 16px 0 0;
 }
 
+.faq-item:hover {
+  border-radius: 16px;
+}
+
 .faq-question:hover {
   background: #e0e0e0;
   
@@ -237,8 +243,8 @@ transition: background-color 0.3s ease, color 0.3s ease;
   display: none;  
   padding: 10px 15px;
 
-  background: #bcdfd1;
-  border-radius: 0 0 8px 8px;
+  background-color: #bcdfd1;
+  border-radius: 0 0 16px 16px;
   font-weight: 300;
 font-size: 16px;
 line-height: 1.5;
@@ -261,7 +267,7 @@ color: #292929;
 
 .faq-arrow {
   position: absolute;
-  top: 50%;
+  top: 41px;
   right: 10px;
   transform: translateY(-50%) rotate(45deg); 
   width: 10px;
