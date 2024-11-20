@@ -165,7 +165,7 @@ img {
 
 .faq {
   margin: 20px auto;
-  max-width: 360px;
+
 }
 
 .faq-title {
@@ -193,7 +193,6 @@ margin-bottom: 40px;
 }
 
 .faq-item {
-  /* margin-bottom: 10px; */
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
@@ -299,6 +298,25 @@ color: var(--main-cl);
 .faq-arrow.open {
   transform: translateY(-50%) rotate(225deg); 
 }
+
+/* ==========TABLET============ */
+@media screen and (min-width: 768px){
+  .faq-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+  
+  .faq-question {
+    font-size: 20px;
+  line-height: 1.6;
+  
+  }
+}
+
+
+
 
 
 
