@@ -321,9 +321,49 @@ color: var(--main-cl);
 @media screen and (min-width: 1280px) {
 .faq {
   position: relative;
+  background-image: url('../img/decor\ bg\ 4-min.png'); /* Replace 'dots.png' with the actual image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom left;
 }
 
 
+.faq-decoration {
+  position: absolute;
+  /* bottom: -40px;
+  left: -20px; */
+ 
+  
+}
+
+.title-qth{
+  display: flex;
+  flex-direction: row;
+  width: 520px;
+}
+
+.faq-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.faq-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.faq-list{
+  width: 592px;
+  margin-top: 276px;
+}
+
+.faq-question{
+  justify-content: space-between;
+}
 }
 
 
