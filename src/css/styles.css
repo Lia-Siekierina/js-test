@@ -315,7 +315,16 @@ color: var(--main-cl);
   }
 }
 
+/* ====DESKTOP==== */
 
+
+@media screen and (min-width: 1280px) {
+.faq {
+  position: relative;
+}
+
+
+}
 
 
 
