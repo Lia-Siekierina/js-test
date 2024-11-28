@@ -319,13 +319,16 @@ color: var(--main-cl);
 
 
 @media screen and (min-width: 1280px) {
-.faq {
+.faq{
+  min-height: 1020px;
   position: relative;
   background-image: url('../img/decor\ bg\ 4-min.png'); /* Replace 'dots.png' with the actual image path */
   background-size: contain;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom left;
+
+  margin-left: 32px;
 }
 
 
@@ -358,6 +361,7 @@ color: var(--main-cl);
 
 .faq-list{
   width: 592px;
+  height: 744px;
   margin-top: 276px;
 }
 
