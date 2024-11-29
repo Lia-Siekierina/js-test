@@ -319,8 +319,8 @@ color: var(--main-cl);
 
 
 @media screen and (min-width: 1280px) {
-.faq{
-  min-height: 1020px;
+.faq-content{
+  /* min-height: 1020px; */
   position: relative;
   background-image: url('../img/decor\ bg\ 4-min.png'); /* Replace 'dots.png' with the actual image path */
   background-size: contain;
@@ -328,7 +328,7 @@ color: var(--main-cl);
   background-size: auto;
   background-position: bottom left;
 
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 
@@ -346,17 +346,17 @@ color: var(--main-cl);
   width: 520px;
 }
 
-.faq-content{
+/* .faq-content{
   display: flex;
   flex-direction: row;
-}
+} */
 
 .faq-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
 }
 
 .faq-list{
